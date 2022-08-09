@@ -1,0 +1,28 @@
+
+Task 1 - basic math operations
+0.67
+3.1429
+
+Task 1 - basic math operations
+12 + 34 =  46
+43 - 56  =  -13
+4 * 4  =  16
+4 / 5  =  0.8
+12 % 5  =  2
+2 ** 4 =  16
+12 // 3  =  4
+12.2 // 3  =  4
+True * False =  0
+True * True =  1
+False * False =  0
+5 * (2-3j) =  (10-15j)
+
+Task 2 - basic math functions
+max(2, 2.0, -0.5) =  2
+min(23, 22, 55.0) =  22
+abs(-34.23) =  34.23
+pow(3, 4) =  81
+ceil(34/5) =  7
+floor(34/5) =  6
+max(True,False) =  True
+abs(4 - 3j) =  5.0
