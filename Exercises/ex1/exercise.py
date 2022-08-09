@@ -22,6 +22,10 @@ else:
 
 print(5>3)
 
+"""
+You can use triple-quoted strings. When they're not a docstring (the first thing in a class/function/module), they are ignored.
+Read aforementioned answer from Stack Overflow!
+""" 
 
 print()
 print("Task 2 - printing type of given value")
