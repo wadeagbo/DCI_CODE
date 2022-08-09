@@ -75,8 +75,7 @@ print("Task 5 - using comments in code)")
 print("Hello")
 print("Line with inline code!")  # remember about spacing!
 
-print(type(123.45))  # getting type of number 
-
+print(type(123.45))  # getting type of number  
 
 """
 You can use triple-quoted strings. When they're not a docstring (the first thing in a class/function/module), they are ignored.
