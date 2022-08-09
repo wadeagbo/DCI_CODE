@@ -1,0 +1,39 @@
+
+Hello - world
+<class 'str'>
+True
+ 
+Task 1 - printing single object
+234
+43.12
+(3+2j)
+Hello
+True
+False
+True
+
+Task 2 - printing type of given value
+123 is type of  <class 'int'>
+43.23 is type of  <class 'float'>
+(4-1j) is type of  <class 'complex'>
+How are you? is type of  <class 'str'>
+True is type of  <class 'bool'>
+
+Task 3 - checking type of value
+True
+False
+True
+True
+False
+
+Task 4 - checking type of value (version 2)
+ Is 123 an instance of int?:    True
+ Is 43.23 an instance of bool?:    False
+ Is (4-1j) an instance of complex?:    True
+ Is True an instance of bool?:    True
+ Is 'How are you?' an instance of float?:    False
+
+Task 5 - using comments in code)
+Hello
+Line with inline code!
+<class 'float'>

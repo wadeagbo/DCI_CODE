@@ -3,7 +3,7 @@
 # thank me later when your git graph is as green as the python money u gonna earn
 # Start the exercise 
 #
-print()
+print() 
 print("Hello", "world", sep=" - ")
 print(type("Hello"))
 print(isinstance(123,int))
@@ -16,7 +16,7 @@ print("Hello")
 print(True)
 
 if 3>5:
-    print(True)
+    print(True)   
 else:
     print(False)
 
