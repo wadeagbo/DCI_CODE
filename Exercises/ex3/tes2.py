@@ -17,7 +17,7 @@ for i in range1(1,nn):
         ncount1 +=1
         if ncount1 > 2:
             print(f"{nn} is not a prime number")
-        elif ncount1 ==2:
+        elif ncount1 ==2 & i==nn:
             print(f"{nn} is a prime number")
 
 

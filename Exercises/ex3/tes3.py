@@ -2,28 +2,29 @@
 def range1(start,end):
     return range(start,end+1)
 
+
+
+def range1(start,end):
+    return range(start,end+1)
+
+
 numb   = input("Enter number:    ")
 nn  =   int(numb)
+ncount1=0
 for i in range1(1,nn):
     if nn%i==0:
-        print(i)
-lst = [x for x in range1(1,nn) if nn%x==0 ]
-print(lst)
+        if i==2:
+            print(f"{nn} is an even number")
+           
 
-
-
-
-numb   = input("Enter number:    ")
-nn  =   int(numb)
-ncount = 0
-for i in range1(1,nn):
-    if nn%i==0 :
-            ncount +=1
-            if(ncount<3):
-                print("prime numbers: ", i)
-            elif(ncount>3):
-                print("not prime numbers: ", i)
+        ncount1 +=1
+        if ncount1 > 2:
+            print(f"{nn} is NOT a prime number")
+            break
+            
+        elif ncount1 ==2 and  i==nn:
+            print(f"Yes {nn} is a prime number")
+            
 
 lst = [x for x in range1(1,nn) if nn%x==0 ]
 print(lst)
-
