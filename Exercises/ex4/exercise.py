@@ -67,7 +67,7 @@ while i <=3:
             print(f" {max(a,b)} is bigger than {Bigg}" )
     
     print(i)
-    i +=1789
+    i +=1
 
 
 
