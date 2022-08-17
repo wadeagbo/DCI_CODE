@@ -201,7 +201,7 @@ x = int(input("First number: "))
 y = int(input("Second number: "))
 z = int(input("Third number: "))
 
-if x ==y or y == z:
+if x ==y or y == z or x==z:
     result = 0
     print("Calculated sum is ", result)
 
@@ -222,7 +222,7 @@ y = int(input("Second number: "))
 
 result = x + y
 
-if result > 15 and result < 20:
+if result >= 15 and result <= 20:
     sum = 20
     print("Calculated sum is ", sum)
 else: print("Calculated sum is ", result)
@@ -277,8 +277,64 @@ x = input(" Type your value: ")
 
 if x == '0':
     x = False
+    print("Your entered value is now ", x)
 elif x == '1':
     x = True
+    print("Your entered value is now ", x)
 else:
     pass
     print("Your entered value is now ", x)
+
+
+
+print()
+print("Task 10 - divisible number")
+
+
+
+'''
+Your task is to fix program non-working correctly.
+The problem:  
+- accept (prompt) two integers values from the user  
+- check whether a first number is divisible by second number and vice versa  
+- display results  
+
+Program with bugs:  
+```python
+x = input("First number: ")
+y = input("Second number: ")
+
+if x %% y >= 0:
+    print("First number is divisible by second number, result =", x // y)
+elif y %% y != 0:
+    print("Second number is divisible by first number, result =", y // x)
+else:
+    print("Numbers are non-divisable!")
+```
+
+>Find the bug and fix it :smiley:
+- Your result could look like this:
+
+```bash
+First number: 5
+Second number: 55
+Second number is divisible by first number, result = 11.0
+
+First number: 3
+Second number: 5
+Numbers are non-divisable!
+```
+### 
+'''
+
+
+
+x = float(input("First number: "))
+y = float(input("Second number: "))
+
+if x % y== 0:
+    print("First number is divisible by second number, result =", y/x)
+elif y % x == 0:
+    print("Second number is divisible by first number, result =", y/x)
+else:
+    print("Numbers are non-divisable!")
