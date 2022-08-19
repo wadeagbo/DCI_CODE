@@ -1,40 +1,28 @@
 import os
-import time
 import datetime
-import smtplib                        # optional (advanced)
-from   email.mime.multipart  import *   # optional (& advanced)
-from   email.mime.text       import *   # optional (& advanced)
-from  email.message          import *   # optional
-from  colorama               import *  # optional
-from art                     import *  # optional
+from   colorama                          import * # optional
+from   art                               import * # optional
 
-
-#initializing colorama
+# initializing colorama
 init()
 
-# email function (optional & advanced)
-# def gmail_send(subject, message, from_mail, to_mail, password):
-#     global link
-#     server = smtplib.SMTP('smtp.gmail.com', 587)
-#     server.starttls()
-#     server.login(from_mail, password)
-#     msg            = EmailMessage()
-#     message        = f'{message}'
-#     msg.set_content(message)
-#     msg['Subject'] = subject
-#     msg['From']    = waheed.adeagbo@gmail.com
-#     msg['To']      = nadeagbo@yahoo.com
-#     server.send_message(msg)
+# datetime variable
+now        = datetime.datetime.today().strftime("%H:%M:%S %d-%m-%Y")
 
-print(Fore.LIGHTCYAN_EX+"AWESOME   JOURNAL"+ "")
 
-tprint("AWESOME JOURNAL", font="random")
-#display current journal 
+print(Fore.LIGHTCYAN_EX+"")
+tprint("AWESOME JOURNAL", font="random") # displaying wonderful title
+print(""+Style.RESET_ALL)
 
-new_entry = input("ENTER DIARY ENTRY HERE >>>")
+# display current journal
+new_entry = input("ENTER DIARY ENTRY HERE >>> ")
 
-now  = datetime.datetime.today().strftime("%H:%M:%S %d-%m-%Y")
-print(now)
+here = os.getcwd().replace("\\","/") # defining path variable for later if statement
 
-with open("/home/user/Documents/DCI_CODE/AJ2/journal.txt", "a") as file:
-    file.write(now + " " + new_entry + "\n")
+if here.upper() in new_entry.upper(): # if weird path bug, dont save
+    print("")
+elif new_entry != "": # if entry is not empty, save entry
+    with open("journal.txt", "a") as file:
+        file.write(now + " " + new_entry + "\n")
+else:
+    print("Empty string. NOT ADDING.") # if entry empty, dont save
