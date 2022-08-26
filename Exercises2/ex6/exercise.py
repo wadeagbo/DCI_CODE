@@ -30,9 +30,9 @@ as he looked."""
 
 ns= len(given_string)
 
-word1= "hello"
-word2= "Gregor"
-word3 = "waheed"
+#word1= "hello"
+#word2= "Gregor"
+#word3 = "waheed"
 
 def select_word(word,given_string):
     greet =word
@@ -45,16 +45,17 @@ def select_word(word,given_string):
                 greet_new +=char2
                 num = given_string.index(char2)
         num1  += given_string[num]
-        print(num, " ", given_string[num] )
+        print(f"{given_string[num] :>10}     [{num :2}] " )
     return num1
 
 
-
+word1 = input(" input search word 1 in the string:   ")
+word2 = input(" input search word 2 in the string:   ")
+print()
 string1 = select_word(word1,given_string)
 print()
 string2 = select_word(word2,given_string)
-print(string1 + " " + string2)
-
-
-select_word(word3,given_string)
+print()
+print(f"        {string1} {string2} ")
+print()
 
