@@ -1,0 +1,8 @@
+colorama==0.4.5
+npyscreen==4.10.5
+pkg_resources==0.0.0
+PyQt6==6.3.1
+PyQt6-Qt6==6.3.1
+PyQt6-sip==13.4.0
+PySimpleGUI==4.60.3
+tk==0.1.0
