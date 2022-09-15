@@ -1,0 +1,6 @@
+EXERCISE:
+Create a program that
+- takes an  int as input
+- uses this int as a countdown
+- visibly counts down
+- prints begin time, end time and countdown int

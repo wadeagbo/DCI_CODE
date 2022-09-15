@@ -1,27 +1,7 @@
-import sys
-
-from colorama import init
-init(strip=not sys.stdout.isatty()) # strip colors if stdout is redirected
-from termcolor import cprint
-from pyfiglet import figlet_format
-
-
 import time
-import PySimpleGUI as sg
-
-from   colorama                          import * # optional
-from   art                               import * # optional
-
-# initializing colorama
-
-#sg.Window(title="Hello World", layout=[[]], margins=(100, 50)).read()
-#sg.Window(title="Hello World", layout=[[]], margins=(200, 100)).read()
-
-
 
 def step_print(string): # creating a function for printing the menu in a more stylish way
-#    sg.Window(title=string, layout=[[]], margins=(200, 100)).read()
-    cprint(figlet_format(string, font='starwars'), 'yellow', 'on_red', attrs=['bold'])   
+    print(string)   
     # OPTIONAL: you could add sound effects with the vlc library here
     time.sleep(0.1) # time sleep function to pause the program for a splitsecond so the menu experience is better
 
