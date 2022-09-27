@@ -1,0 +1,29 @@
+
+An on-premises data center is a group of servers that you privately own and control. 
+
+"On-prem" refers to private data centers that companies house in their own facilities and maintain themselves. On-prem infrastructure can be used to run private clouds, in which compute resources are virtualized in much the same way as those of public clouds (however, private clouds can also be run on leased third-party hardware).
+
+
+
+----------------
+Traditional cloud computing (as opposed to hybrid or private cloud computing models) involves leasing 
+data center resources from a third-party service provider.
+
+
+When people speak of cloud computing, they’re most often referring to "traditional," or "public," cloud, a model in which a third-party service provider makes computing resources available for consumption on an as-needed basis. Public cloud is a multi-tenant environment, meaning that these computing resources are shared by multiple individuals or companies, with all data secured by state-of-the-art encryption.
+
+
+They bothe use
+----------------
+HPE products and solutions
+Hybrid cloud: Use HPE to power your apps and services, placing workloads in on-prem data centers or in the cloud, as appropriate.
+
+Composable infrastructure: Empower your IT to create and deliver value instantly, continuously, and at the speed and flexibility of cloud—within your own secure data center.
+
+HPE SimpliVity: Use HPE SimpliVity hyperconverged infrastructure to create an on-prem or hybrid cloud solution.
+
+----------------------------
+
+On-prem and cloud compared
+-----------------
+

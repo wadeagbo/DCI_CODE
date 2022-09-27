@@ -1,0 +1,57 @@
+from datetime import datetime , timedelta
+
+current_datetime = datetime.now()
+print ("Current Date time:  ", current_datetime)
+print ("15 days before:     ",current_datetime +timedelta(days=-15))
+print()
+print()
+print()
+
+
+#  Task 1
+
+day_today = "8/07/2021"
+d= datetime.strptime(day_today, "%d/%m/%Y")
+print("Format 8/07/2021 =  ", d)
+td= d +timedelta(days=-15)
+print ("15 days before:     ",td)
+
+
+
+print ("15 days before:     ",td.strftime("%Y-%m-%d"))
+
+
+print()
+print()
+print()
+
+#  Task 2
+current_datetime_n2 = "8/07/2021"
+converted_current_datetime_n2 =  datetime.strptime(current_datetime_n2, "%d/%m/%Y")
+print("Format 8/07/2021 =  ", d)
+td= d +timedelta(days=7)
+print ("7 days after:       ",td)
+print ("7 days after:       ",td.strftime("%Y-%m-%d"))
+
+
+
+
+print()
+print()
+print()
+
+
+#  Task 3
+#starting_rent = '25 January, 2021'
+#converted_starting_rent = datetime.strptime(starting_rent, "%d %B, %Y")
+#print("Starting_rent:    "   ,  converted_starting_rent) 
+
+
+
+
+start_date = datetime(year=2020, month=1, day=1)
+date_25 =  start_date + timedelta(days=25)
+
+print("Starting date:    "   ,  start_date) 
+print("After 25 days:    "   ,  date_25)
+
